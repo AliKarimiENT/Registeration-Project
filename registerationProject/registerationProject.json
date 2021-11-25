@@ -1,0 +1,188 @@
+{
+	"info": {
+		"_postman_id": "61089ebc-281e-4cfe-b130-1a226ecc15aa",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getUser",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{host}}/api/users?token=7a0cb6ae6fc21c72c73b1bbdb7ecaf6e",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"users"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "7a0cb6ae6fc21c72c73b1bbdb7ecaf6e"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "insertUser",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "hassan",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "admin@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "admin@123gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/HWR/Desktop/705713416-talab-org.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/api/insert",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"insert"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "hasan",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "hasani@gmail.com",
+							"disabled": true
+						},
+						{
+							"key": "image",
+							"value": "jan.jpg",
+							"disabled": true
+						},
+						{
+							"key": "username",
+							"value": "admin12345",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "لاگین کاربر",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "get token",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "vlidateemail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "alisaadatmand27@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/api/vaildateemail",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"vaildateemail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "vildateusername",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/vaildateusername?username=admin",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"vaildateusername"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "admin"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
